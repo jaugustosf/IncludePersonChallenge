@@ -15,30 +15,29 @@ body{
 .luffy{
     background-image: url(src/luffyback.png);
     background-repeat: no-repeat;
-    background-size: 120%;
-    /* background-position: center; */
-    background-position: 0 -160px;
+    background-size: 109%;
+    background-position: 158px -55px;
 }
 
 .zoro{
     background-image: url(src/zoroback.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 109%;
+    background-position: 158px -55px;
 }
 
 .nami{
     background-image: url(src/namiback.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 109%;
+    background-position: 158px -55px;
 }
 
 .sanji{
     background-image: url(src/sanjiback.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 109%;
+    background-position: 158px -55px;
 }
 
 .container {
@@ -49,8 +48,9 @@ body{
 .container .sidebar {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 178px; /* Largura da barra lateral */
+    width: 176px; /* Largura da barra lateral */
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
     color: #fff; /* Cor do texto na barra lateral */
     height: 100vh; /* Espaçamento interno na barra lateral */
@@ -59,31 +59,37 @@ body{
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: flex-start; /* Alinha a imagem para a esquerda */
-    width: 500px;
+    align-items: flex-start; /* Alinha a imagem e o texto para a esquerda */
+    width: 630px;
     height: 100vh;
-    background-color: #333;
     z-index: 2;
-    opacity: 0.3;
-    padding: 100px; /* Espaçamento interno de 100px */
+    padding-left: 188px; /* Aumenta o espaço à esquerda para alinhar com a imagem */
     box-sizing: border-box; /* Inclui o padding no tamanho total */
-    margin-right: auto; /* Define uma margem esquerda */
+    margin-right: auto;
 }
 
 .content img {
-    max-height: 50%;
+    max-height: 19%;
     max-width: 100%;
     object-fit: contain;
-    margin-top: 50px; /* Reduza o valor da margem inferior para diminuir a distância */
+    margin-top: 290px;
     align-self: center; /* Centraliza a imagem horizontalmente */
 }
 
+.content h1 {
+    margin-top: -10px;
+    font-size: 48px;
+    margin-right: auto; /* Alinha o título à esquerda */
+}
 
 .content p {
-    text-align: left;
+    margin-top: -15px;
+    margin-bottom: 150px;
+    text-align: start;
     color: #fff;
+    margin-right: auto; /* Alinha o parágrafo à esquerda */
 }
+
 
 .circle {
     width: 100px; /* Largura do círculo */
@@ -117,15 +123,15 @@ body{
 }
 
 .circle:hover {
-    transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
+    transform: scale(1.2); /* Aumente o tamanho em 20% quando passar o mouse */
     box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
 }
 
 .sombra {
-    width: 70%;
+    width: 90%;
     height: 100%;
     position: absolute;
-    background: linear-gradient(128deg, black 38%,rgba(0, 0, 0, 0) 55%, transparent);
+    background: linear-gradient(128deg, black 38.4%,rgba(0, 0, 0, 0) 55%, transparent);
     z-index: 1;
     margin: 0;
 }
