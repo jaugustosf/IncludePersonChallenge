@@ -1,3 +1,10 @@
+h1 {
+    font-family: 'Secular One';
+    color: #fff;
+}
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -51,21 +58,32 @@ body{
 
 .content {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin-right: auto;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha a imagem para a esquerda */
     width: 500px;
     height: 100vh;
     background-color: #333;
     z-index: 2;
+    opacity: 0.3;
+    padding: 100px; /* Espaçamento interno de 100px */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+    margin-right: auto; /* Define uma margem esquerda */
 }
 
 .content img {
-    max-height: 20%; /* Defina a altura máxima desejada */
-    max-width: 100%; /* Defina a largura máxima para evitar esticar */
-    object-fit: contain; /* Controla o dimensionamento sem distorção */
+    max-height: 50%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-top: 50px; /* Reduza o valor da margem inferior para diminuir a distância */
+    align-self: center; /* Centraliza a imagem horizontalmente */
 }
 
+
+.content p {
+    text-align: left;
+    color: #fff;
+}
 
 .circle {
     width: 100px; /* Largura do círculo */
