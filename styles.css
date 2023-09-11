@@ -3,41 +3,18 @@ h1 {
     color: #fff;
 }
 
-
-
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; /* Estilo de fonte padrão */
-    background-color: #f0f0f0; /* Cor de fundo da página */
+    background-color: #000000; /* Cor de fundo da página */
 }
 
 .luffy{
     background-image: url(src/luffyback.png);
     background-repeat: no-repeat;
-    background-size: 109%;
-    background-position: 158px -55px;
-}
-
-.zoro{
-    background-image: url(src/zoroback.jpg);
-    background-repeat: no-repeat;
-    background-size: 109%;
-    background-position: 158px -55px;
-}
-
-.nami{
-    background-image: url(src/namiback.jpg);
-    background-repeat: no-repeat;
-    background-size: 109%;
-    background-position: 158px -55px;
-}
-
-.sanji{
-    background-image: url(src/sanjiback.png);
-    background-repeat: no-repeat;
-    background-size: 109%;
-    background-position: 158px -55px;
+    background-size: 108%;
+    background-position: -115% 26%;
 }
 
 .container {
@@ -50,7 +27,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 176px; /* Largura da barra lateral */
+    width: 9.3%; /* Largura da barra lateral */
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
     color: #fff; /* Cor do texto na barra lateral */
     height: 100vh; /* Espaçamento interno na barra lateral */
@@ -60,10 +37,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinha a imagem e o texto para a esquerda */
-    width: 630px;
+    width: 35%;
     height: 100vh;
     z-index: 2;
-    padding-left: 188px; /* Aumenta o espaço à esquerda para alinhar com a imagem */
+    padding-left: 7%; /* Aumenta o espaço à esquerda para alinhar com a imagem */
     box-sizing: border-box; /* Inclui o padding no tamanho total */
     margin-right: auto;
 }
@@ -77,19 +54,18 @@ body{
 }
 
 .content h1 {
-    margin-top: -10px;
+    margin-top: -2%;
     font-size: 48px;
-    margin-right: auto; /* Alinha o título à esquerda */
+    /* margin-right: auto; */
 }
 
 .content p {
-    margin-top: -15px;
-    margin-bottom: 150px;
-    text-align: start;
+    margin-top: -2%;
+    /* margin-bottom: 150px; */
+    /* text-align: start; */
     color: #fff;
-    margin-right: auto; /* Alinha o parágrafo à esquerda */
+    /* margin-right: auto; */
 }
-
 
 .circle {
     width: 100px; /* Largura do círculo */
@@ -134,4 +110,183 @@ body{
     background: linear-gradient(128deg, black 38.4%,rgba(0, 0, 0, 0) 55%, transparent);
     z-index: 1;
     margin: 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .luffy{
+        background-size: 130%;
+        background-position: 5% 30%;
+    }
+    
+    .container .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 9%; /* Largura da barra lateral */
+        background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
+        color: #fff; /* Cor do texto na barra lateral */
+        height: 100vh; /* Espaçamento interno na barra lateral */
+    }
+    
+    .circle {
+        width: 80px; /* Largura do círculo */
+        height: 80px; /* Altura do círculo */
+        background-color: #0c0404;
+        border-radius: 50%; /* Torna o elemento um círculo perfeito */
+        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
+        margin: 10px 0; /* Espaçamento entre os círculos */
+        display: flex; /* Use flexbox para centralizar conteúdo */
+        justify-content: center; /* Centralize horizontalmente */
+        align-items: center; /* Centralize verticalmente */
+        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
+        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .luffy{
+        background-size: 152%;
+        background-position: 25% 28%;
+    }
+    
+    .container .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 9%; /* Largura da barra lateral */
+        background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
+        color: #fff; /* Cor do texto na barra lateral */
+        height: 100vh; /* Espaçamento interno na barra lateral */
+    }
+    
+    .circle {
+        width: 70px; /* Largura do círculo */
+        height: 70px; /* Altura do círculo */
+        background-color: #0c0404;
+        border-radius: 50%; /* Torna o elemento um círculo perfeito */
+        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
+        margin: 10px 0; /* Espaçamento entre os círculos */
+        display: flex; /* Use flexbox para centralizar conteúdo */
+        justify-content: center; /* Centralize horizontalmente */
+        align-items: center; /* Centralize verticalmente */
+        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
+        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+    }
+
+    .circle:hover {
+        transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
+        box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
+    }
+
+    .content img {
+        max-height: 14%;
+        max-width: 100%;
+        object-fit: contain;
+        margin-top: 290px;
+        align-self: center; /* Centraliza a imagem horizontalmente */
+    }
+    
+    .content h1 {
+        margin-top: -2%;
+        font-size: 32px;
+        /* margin-right: auto; */
+    }
+    
+    .content p {
+        margin-top: -2%;
+        font-size: 0.8rem;
+        /* margin-bottom: 150px; */
+        /* text-align: start; */
+        color: #fff;
+        /* margin-right: auto; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .luffy {
+      background-size: 150vh;
+      background-position: center -15vh;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column; /* Altera a direção do fluxo de flexbox para coluna */
+      overflow: hidden;
+    }
+    
+    .container .sidebar {
+        display: flexbox;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw; /* Largura da barra lateral */
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        /* color: #fff; */
+        height: 9.3%; /* Espaçamento interno na barra lateral */
+        z-index: 2;
+        margin-top: -18vh;
+        box-sizing: border-box;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha a imagem e o texto para a esquerda */
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        padding-left: 7%;
+        padding-right: 7%;
+        box-sizing: border-box; /* Inclui o padding no tamanho total */
+        margin-right: auto;
+    }
+
+    .content img {
+      max-height: 9%;
+      max-width: 100%;
+      object-fit: contain;
+      margin-top: 370px;
+      align-self: center;
+    }
+  
+    .content h1 {
+      margin-top: -20%;
+      font-size: 32px;
+    }
+  
+    .content p {
+      margin-top: 0%;
+      /* font-size: 0.9rem; */
+      color: #fff;
+    }
+
+    .circle {
+        width: 15vw; /* Largura do círculo */
+        height: 15vw; /* Altura do círculo */
+        background-color: #0c0404;
+        border-radius: 50%; /* Torna o elemento um círculo perfeito */
+        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
+        margin: 10px; /* Espaçamento entre os círculos */
+        display: flex; /* Use flexbox para centralizar conteúdo */
+        justify-content: center; /* Centralize horizontalmente */
+        align-items: center; /* Centralize verticalmente */
+        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
+        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+    }
+
+    .circle:hover {
+        transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
+        box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
+    }
+  
+    .sombra {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0) 70%, transparent);
+      z-index: 1;
+      margin: 0;
+    }
 }
