@@ -16,10 +16,29 @@ body{
     background-size: 108%;
     background-position: -115% 26%;
 }
+.zoro{
+    background-image: url(src/zoroback.jpg);
+    background-repeat: no-repeat;
+    background-size: 108%;
+    background-position: -5% 70%;
+}
+.nami{
+    background-image: url(src/namiback.jpg);
+    background-repeat: no-repeat;
+    background-size: 108%;
+    background-position: right 50%;
+}
+.sanji{
+    background-image: url(src/sanjiback.png);
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-position: 120% 20%;
+}
 
 .container {
     display: flex;
     margin-left: auto;
+    height: 100vh;
 }
 
 .container .sidebar {
@@ -117,6 +136,21 @@ body{
         background-size: 130%;
         background-position: 5% 30%;
     }
+
+    .zoro{
+        background-size: 130%;
+        background-position: 70% 50%;
+    }
+    
+    .nami{
+        background-size: 130%;
+        background-position: 50% 50%;
+    }
+    
+    .sanji{
+        background-size: 112%;
+        background-position: 0 15%;
+    }
     
     .container .sidebar {
         display: flex;
@@ -209,7 +243,22 @@ body{
       background-size: 150vh;
       background-position: center -15vh;
     }
-  
+    
+    .zoro {
+        background-size: 150vh;
+        background-position: -20rem -30vh;
+    }
+    
+    .nami {
+        background-size: 150vh;
+        background-position: -25rem -40vh;
+    }
+
+    .sanji {
+        background-size: 90vh;
+        background-position: center -2vh;
+    }
+
     .container {
       display: flex;
       flex-direction: column; /* Altera a direção do fluxo de flexbox para coluna */
@@ -226,7 +275,7 @@ body{
         /* color: #fff; */
         height: 9.3%; /* Espaçamento interno na barra lateral */
         z-index: 2;
-        margin-top: -18vh;
+        margin-top: -19vh;
         box-sizing: border-box;
     }
 
@@ -280,7 +329,7 @@ body{
         transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
         box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
     }
-  
+
     .sombra {
       width: 100%;
       height: 100%;
@@ -288,5 +337,17 @@ body{
       background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0) 70%, transparent);
       z-index: 1;
       margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .zoro {
+        background-size: 150vh;
+        background-position: -45rem -30vh;
+    }
+
+    .nami {
+        background-size: 150vh;
+        background-position: -40rem -40vh;
     }
 }
