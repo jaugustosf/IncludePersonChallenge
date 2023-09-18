@@ -6,8 +6,8 @@ h1 {
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Estilo de fonte padrão */
-    background-color: #000000; /* Cor de fundo da página */
+    font-family: Arial, sans-serif;
+    background-color: #000000;
 }
 
 .luffy{
@@ -46,21 +46,21 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 9.3%; /* Largura da barra lateral */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
-    color: #fff; /* Cor do texto na barra lateral */
-    height: 100vh; /* Espaçamento interno na barra lateral */
+    width: 9.3%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 100vh;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha a imagem e o texto para a esquerda */
+    align-items: flex-start;
     width: 35%;
     height: 100vh;
     z-index: 2;
-    padding-left: 7%; /* Aumenta o espaço à esquerda para alinhar com a imagem */
-    box-sizing: border-box; /* Inclui o padding no tamanho total */
+    padding-left: 7%;
+    box-sizing: border-box;
     margin-right: auto;
 }
 
@@ -69,41 +69,37 @@ body{
     max-width: 100%;
     object-fit: contain;
     margin-top: 290px;
-    align-self: center; /* Centraliza a imagem horizontalmente */
+    align-self: center;
 }
 
 .content h1 {
     margin-top: -2%;
     font-size: 48px;
-    /* margin-right: auto; */
 }
 
 .content p {
     margin-top: -2%;
-    /* margin-bottom: 150px; */
-    /* text-align: start; */
     color: #fff;
-    /* margin-right: auto; */
 }
 
 .circle {
-    width: 100px; /* Largura do círculo */
-    height: 100px; /* Altura do círculo */
+    width: 100px;
+    height: 100px;
     background-color: #0c0404;
-    border-radius: 50%; /* Torna o elemento um círculo perfeito */
-    overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
-    margin: 10px 0; /* Espaçamento entre os círculos */
-    display: flex; /* Use flexbox para centralizar conteúdo */
-    justify-content: center; /* Centralize horizontalmente */
-    align-items: center; /* Centralize verticalmente */
-    transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
-    position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
 }
 
 .circle img {
     background-color: #0c0404;
-    width: auto; /* Mantenha a proporção original da imagem */
-    max-height: 80%; /* Mantenha a proporção original da imagem */
+    width: auto;
+    max-height: 80%;
 }
 
 .circle::before {
@@ -111,15 +107,15 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 2px solid #0c0404; /* Borda vermelha translúcida */
-    border-radius: 100%; /* Torna o elemento um círculo perfeito */
-    z-index: -1; /* Coloca o elemento atrás do círculo */
-    transition: transform 0.2s; /* Adicione uma transição suave para transformação */
+    border: 2px solid #0c0404;
+    border-radius: 100%;
+    z-index: -1;
+    transition: transform 0.2s;
 }
 
 .circle:hover {
-    transform: scale(1.2); /* Aumente o tamanho em 20% quando passar o mouse */
-    box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ffffff;
 }
 
 .sombra {
@@ -157,24 +153,24 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 9%; /* Largura da barra lateral */
-        background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
-        color: #fff; /* Cor do texto na barra lateral */
-        height: 100vh; /* Espaçamento interno na barra lateral */
+        width: 9%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: #fff;
+        height: 100vh;
     }
     
     .circle {
-        width: 80px; /* Largura do círculo */
-        height: 80px; /* Altura do círculo */
+        width: 80px;
+        height: 80px;
         background-color: #0c0404;
-        border-radius: 50%; /* Torna o elemento um círculo perfeito */
-        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
-        margin: 10px 0; /* Espaçamento entre os círculos */
-        display: flex; /* Use flexbox para centralizar conteúdo */
-        justify-content: center; /* Centralize horizontalmente */
-        align-items: center; /* Centralize verticalmente */
-        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
-        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
     }
 }
 
@@ -189,29 +185,29 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 9%; /* Largura da barra lateral */
-        background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da barra lateral */
-        color: #fff; /* Cor do texto na barra lateral */
-        height: 100vh; /* Espaçamento interno na barra lateral */
+        width: 9%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        height: 100vh;
     }
     
     .circle {
-        width: 70px; /* Largura do círculo */
-        height: 70px; /* Altura do círculo */
+        width: 70px;
+        height: 70px;
         background-color: #0c0404;
-        border-radius: 50%; /* Torna o elemento um círculo perfeito */
-        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
-        margin: 10px 0; /* Espaçamento entre os círculos */
-        display: flex; /* Use flexbox para centralizar conteúdo */
-        justify-content: center; /* Centralize horizontalmente */
-        align-items: center; /* Centralize verticalmente */
-        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
-        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10px 0;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
     }
 
     .circle:hover {
-        transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
-        box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #ffffff;
     }
 
     .content img {
@@ -219,22 +215,18 @@ body{
         max-width: 100%;
         object-fit: contain;
         margin-top: 290px;
-        align-self: center; /* Centraliza a imagem horizontalmente */
+        align-self: center;
     }
     
     .content h1 {
         margin-top: -2%;
         font-size: 32px;
-        /* margin-right: auto; */
     }
     
     .content p {
         margin-top: -2%;
         font-size: 0.8rem;
-        /* margin-bottom: 150px; */
-        /* text-align: start; */
         color: #fff;
-        /* margin-right: auto; */
     }
 }
 
@@ -261,7 +253,7 @@ body{
 
     .container {
       display: flex;
-      flex-direction: column; /* Altera a direção do fluxo de flexbox para coluna */
+      flex-direction: column;
       overflow: hidden;
     }
     
@@ -270,10 +262,8 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100vw; /* Largura da barra lateral */
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        /* color: #fff; */
-        height: 9.3%; /* Espaçamento interno na barra lateral */
+        width: 100vw;
+        height: 9.3%;
         z-index: 2;
         margin-top: -19vh;
         box-sizing: border-box;
@@ -282,13 +272,13 @@ body{
     .content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Alinha a imagem e o texto para a esquerda */
+        align-items: flex-start;
         width: 100%;
         height: 100vh;
         z-index: 2;
         padding-left: 7%;
         padding-right: 7%;
-        box-sizing: border-box; /* Inclui o padding no tamanho total */
+        box-sizing: border-box;
         margin-right: auto;
     }
 
@@ -312,22 +302,22 @@ body{
     }
 
     .circle {
-        width: 15vw; /* Largura do círculo */
-        height: 15vw; /* Altura do círculo */
+        width: 15vw;
+        height: 15vw;
         background-color: #0c0404;
-        border-radius: 50%; /* Torna o elemento um círculo perfeito */
-        overflow: hidden; /* Corta o conteúdo que ultrapassa o círculo */
-        margin: 10px; /* Espaçamento entre os círculos */
-        display: flex; /* Use flexbox para centralizar conteúdo */
-        justify-content: center; /* Centralize horizontalmente */
-        align-items: center; /* Centralize verticalmente */
-        transition: transform 0.2s, box-shadow 0.2s; /* Adicione transições suaves para transformação e box-shadow */
-        position: relative; /* Para que possamos posicionar o pseudo-elemento ::before */
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s, box-shadow 0.2s; 
+        position: relative;
     }
 
     .circle:hover {
-        transform: scale(1.1); /* Aumente o tamanho em 20% quando passar o mouse */
-        box-shadow: 0 0 20px #ffffff; /* Adicione uma sombra brilhante */
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #ffffff;
     }
 
     .sombra {

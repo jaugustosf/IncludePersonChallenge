@@ -28,6 +28,9 @@ function trocarConteudo(numero) {
             body.classList.add('sanji');
             break;
         default:
+            h1.textContent = 'Monkey D. Luffy';
+            p.textContent = 'É um pirata destemido e alegre, conhecido por sua personalidade impulsiva e pelo sonho de se tornar o Rei dos Piratas. Com sua tripulação, os Chapéu de Palha, Luffy navega pelos mares perigosos do mundo, em busca do tesouro lendário conhecido como o "One Piece". Possui uma força sobre-humana graças ao poder da Fruta do Diabo Gomu Gomu, que lhe concedeu a capacidade de esticar seu corpo como borracha, e é um mestre na arte do Haki. Luffy é extremamente leal aos seus amigos, e sua coragem inabalável o leva a enfrentar qualquer desafio, por mais assustador que seja, enquanto mantém um senso de justiça inquebrável.';
+            body.classList.add('luffy');
             break;
         }
     }
